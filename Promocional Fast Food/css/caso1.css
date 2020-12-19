@@ -1,0 +1,462 @@
+/* Styles Sheet WcDonald's Promo Page */
+   
+/* social media import icons link  */
+/*  Font awesome icons*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+    /*collapse logo images*/
+    .logoimg {
+      margin-left: 70px;
+       float: left;
+       margin-bottom: 5px;
+       box-shadow:  gray 0.1em 0.1em 0.2em
+   }
+       /* Remove the navbar's default margin-bottom and rounded borders */ 
+       .navbar {
+        background-color: transparent;
+        margin-bottom: 0px;
+        border-radius: 0;
+        background-image: url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/06/16131522/iStock-94500987.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+      }
+
+   /*navbar text */
+   .navbar .nav li a{
+        color: #474b4e;
+        width: 100%;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: sans-serif;
+            text-shadow: gray 0.1em 0.1em 0.2em;
+            border: none;
+            text-align: center;
+            margin-top: 20px;
+        
+           }
+      
+                /* Carouserl images*/
+                .carousel-inner img {
+                  width: 100%; 
+                  margin: auto;
+                  height: 100%;
+                  min-height:50px;
+              }
+      
+          /* Promotions container*/
+          .container {
+            background-image: url("https://www.carroschile.cl/index_htm_files/6.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+           
+           
+          }
+          /* Promotion Title*/
+          .container h1{
+              margin-top: 25px;
+              margin-bottom: 25px;
+            font-size: 60px;
+            color: white;
+            font-weight: 500;
+            font-family: fantasy;
+            text-shadow: grey 0.1em 0.1em 0.2em;
+          }
+            /* Promotion description*/
+          .container p {
+            margin-top: 10px;
+            margin-bottom: 17px;
+            font-size: 15px;
+            font-family: monospace;
+            color: rgb(255, 255, 255);
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.5s linear;
+            border: 2px solid #474b4e;
+            text-shadow:  gray 0.1em 0.1em 0.2em;
+          }
+            /* styles of text. Name of promotion*/
+          .container h2{
+            border-bottom: 1px solid #474b4e;
+            background: transparent;
+            font-size: 30px;
+            font-family: fantasy;
+            color: #474b4e;
+            }
+
+            /* styles of text. category of promotion*/
+            .container h3{
+                margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-family: monospace;
+            color: rgb(255, 255, 255);
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.5s linear;
+            text-shadow:  gray 0.1em 0.1em 0.2em;
+                }
+            /*  styles of text. price of promotion*/
+            .container h4{
+                background: transparent;
+                font-size: 20px;
+                font-family: sans-serif;
+                color: #474b4e;
+                text-shadow:  gray 0.1em 0.1em 0.2em;
+                }
+
+          /* Promotion hover images*/
+          .img1:hover {
+            -webkit-transform:scale(1.2);
+            transform:scale(1.2);
+            }
+            .img2:hover {
+              -webkit-transform:scale(1.2);
+            transform:scale(1.2);
+            }
+            .img3:hover {
+              -webkit-transform:scale(1.2);
+            transform:scale(1.2);
+            }
+            .img4:hover {
+              -webkit-transform:scale(1.2);
+            transform:scale(1.2);
+            }
+           
+      
+      /*Container 1: description of promotions*/
+      
+      .description {
+        transition: all 0.5s linear;
+      opacity: 0;
+      display: none;
+      }
+      
+      .container1:hover .description {
+        display: inline;
+      opacity: 1;
+      background-color: transparent;
+      
+      }
+      .container1:hover h3,
+      .container1:hover p{
+      transform: scale(1);
+      opacity: 1;
+      
+      }
+
+      /*Container 2: Description of promotions*/
+      
+      .container2:hover .description {
+        display: inline;
+      opacity: 1;
+      }
+      .container2:hover h3,
+      .container2:hover p{
+      transform: scale(1);
+      opacity: 1;
+      }
+      
+      /*Container 3: Description of promotions*/
+      
+      .container3:hover .description {
+        display: inline;
+      opacity: 1;
+      }
+      .container3:hover h3,
+      .container3:hover p{
+      transform: scale(1);
+      opacity: 1;
+      }
+
+      /*Container 4: Description of promotion*/
+      
+      .container4:hover .description {
+        display: inline;
+      opacity: 1;
+      }
+      .container4:hover h3,
+      .container4:hover p{
+      transform: scale(1);
+      opacity: 1;
+      }
+      
+      
+          /* button of promotions link */
+          .button {
+            color: #fff !important;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 0.5em 1.2em;
+            background: #1fc028;
+            border: 2px solid;
+            border-color:#1fc028;
+            position: relative;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-top: 25px;
+          }
+          .button:before {
+            content:"";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 1s ease;
+          }
+          .button:hover:before {
+          width: 100%;
+          }
+
+          /* footer styles*/
+          footer {
+            background-color: #474b4e;
+            padding: 10px;
+          text-align: center;
+          }
+
+    
+      
+
+/*Footer social media icons and social contact */
+
+/*Principal container Background*/
+.footer-social-icons {
+    background-image: url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/06/16131522/iStock-94500987.jpg");
+     border: none;
+    background-size: cover;
+}
+/* social icons */
+.footer-social-icons a {
+    text-decoration: none;
+    text-shadow:  gray 0.1em 0.1em 0.2em;
+}
+/* social icon change color : hover*/
+.footer-social-icons a:hover{
+    color: #d9d9d9;
+  
+}
+/*social icon list*/
+.footer-social-icons ul {
+  display: inline;
+}
+/* social icon : color*/
+.footer-social-icons .social-icon {
+    color: #474b4e;  
+}   
+/* social icons list*/
+.footer-social-icons .social-icons li {
+    display: inline;
+}
+/* Facebook icon conf*/
+.footer-social-icons .fa-facebook {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+    font-size: 3.5rem;
+}
+/* Facebook icon change color*/
+.footer-social-icons .fa-facebook:hover {
+    background-color: #3d5b99;
+}
+/* Twitter icon conf*/
+.footer-social-icons .fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+    font-size: 3.5rem;
+}
+/*Twitter icon change color*/
+.footer-social-icons .fa-twitter:hover {
+    background-color: #00aced;
+}
+/* Youtube icon conf*/
+.footer-social-icons .fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+    font-size: 3.5rem;
+}
+/*Youtube icon change color*/
+.footer-social-icons .fa-youtube:hover {
+    background-color: #e64a41;
+}
+/*Instagram icon conf*/
+.footer-social-icons .fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+    font-size: 3.5rem;
+}
+/* Instagram icon change color*/
+.footer-social-icons .fa-instagram:hover {
+    background-color:  #9b36b7;
+}
+
+/*footer-social- contact */
+.footer-social-contact {
+  margin-top: 20px;
+  display: inline;
+  float:right;
+}
+/* Pre footer social contact list*/
+.footer-social-contact .social-contact li {
+    display: inline;
+}
+/* footer contact font conf*/
+.footer-social-contact .social-contact a {
+    color: #474b4e;
+    font-size: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/*contact change color*/
+.footer-social-contact a:hover{
+  color: #d9d9d9;
+
+}
+/* legal terms container */
+.footer-legals-container  {
+    display: inline; 
+    text-align: center;
+    
+  }
+  /*legal termns text color*/
+  .footer-legals-container a {
+    color: gray;
+    
+  }
+
+
+  
+/* @media fit conf*/  
+
+@media only screen and (max-width: 767px) and (min-width: 341px) {  
+
+  /*containers text conf fit*/
+    .container h1 {
+        font-size: 35px;
+       }
+        .container1  {
+            width: 50%;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+       
+
+     .container2  {
+            width: 50%;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 25px;
+        }
+        .container3  {
+            width: 50%;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 25px;
+        }
+        .container4  {
+            width: 50%;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        .navbar .nav li a {
+            font-size: 15px;
+            font-family: sans-serif;
+            color: #474b4e;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            background-color: white;
+            text-shadow:  gray 0.1em 0.1em 0.2em;
+        }
+        .navbar {
+            padding: 10px;
+        }
+       /* logo image fit*/
+        .logoimg {
+            margin-left: 10px;
+             float: left;
+             margin-bottom: -7px;
+             margin-top: -3px;
+             
+         }
+}  
+@media only screen and (max-width: 800px) and (min-width: 701px) { 
+  /* footer contact font conf*/
+.footer-social-contact .social-contact a {
+  color: #474b4e ;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+}
+/* footer legal terms container*/
+  .footer-legals-container  {
+    display: inline-block; 
+    text-align: center;
+    font-size: 10px;
+  }
+
+} 
+@media only screen and (max-width: 700px) and (min-width: 341px) { 
+
+/* social icons */
+.footer-social-icons {
+  text-decoration: none;
+  text-shadow:  gray 0.1em 0.1em 0.2em;
+  text-align: center;
+}
+/* footer contact font conf*/
+.footer-social-contact .social-contact a {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 10px;
+  display: inline-block; 
+  
+}
+/* footer contact change color hover*/
+.footer-social-contact a:hover{
+  color: #04aa36;
+
+}
+/* footer legal container*/
+.footer-legals-container  {
+  display: inline-block; 
+  text-align: center;
+  font-size: 10px;
+}
+
+}
+  
+
+       
+      
